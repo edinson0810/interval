@@ -8,7 +8,7 @@ export const users = [
         id: 2,
         name: "Juan camilo",
         instructor: false,
-        asignaciones: [2, 3]
+        asignaciones: []
     },
     {
         id: 3,

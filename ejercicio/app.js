@@ -1,7 +1,7 @@
 import { asignaciones, users } from "./data.js";
 import { getAsignacionesById, getUserById } from "./modulo.js";
 
- getUserById(6, function (error, user) {
+ getUserById(2, function (error, user) {
    if (error) {
         console.log(error);
     } else {
@@ -14,7 +14,7 @@ import { getAsignacionesById, getUserById } from "./modulo.js";
             })
         }
         } else {
-            console.log("No podemos consultar las asignaciones");
+            console.log("No tiene asignaciones");
             
         }
     }
