@@ -1,12 +1,23 @@
-import { getUserById } from "./modulo.js";
+import { asignaciones, users } from "./data.js";
+import { getAsignacionesById, getUserById } from "./modulo.js";
 
- getUserById(8, function (error, user) {
-    if (error){
-
-    }else {
+ getUserById(6, function (error, user) {
+   if (error) {
+        console.log(error);
+    } else {
         console.log(user);
+
+        if (user.asignaciones.length > 0) {
+            for ( let i = 0; user.asignaciones.length > i; i++){
+              getAsignacionesById(user.asignaciones[i], function(error, asignacion) {
+                console.log(asignacion);
+            })
+        }
+        } else {
+            console.log("No podemos consultar las asignaciones");
+            
+        }
     }
-    
 });
 
 
