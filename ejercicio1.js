@@ -4,7 +4,7 @@ let desde = parseFloat(prompt("Ingrese el numero donde quiere iniciar"));
 let hasta = parseFloat(prompt("Ingrese el numero donde quiere llegar"));
 
 function imprimirNumeros() {
-    // una constancia para que se muestre los numeros cada 1000 ms
+        // una constancia para que se muestre los numeros cada 1000 ms
     const intervalo = setInterval(() =>{
         // comience a mostrar el numero desde
         console.log(desde);
@@ -13,7 +13,7 @@ function imprimirNumeros() {
             // se debe detener
             clearInterval(intervalo)
             // de lo contrario
-        } else  {
+        } else if (desde > hasta){
             // salga el siguiente mensaje
             console.log("Ingrese valores validos");
             // se debe detener
