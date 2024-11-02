@@ -20,7 +20,7 @@ function imprimirNumeros() {
             clearInterval(intervalo)
             
         }
-        // comience a sumar desde el numero desde
+        // comience a sumar el numero desde
         desde++ 
     }, 1000)
 }
