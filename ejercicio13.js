@@ -1,22 +1,13 @@
-function miPromesa () {
-    setTimeout(() => {
-        
-        return new Promise((resolve => (resolve))  )
-     }, 3000);
-
+// funcion llamada mipromesa
+function miPromesa() {
+    // promesa con argumentos
+    return new Promise((resolve, reject) => {
+        // funcion que permite que la promesa se resuelva con retraso de 3 segundo
+        setTimeout(() => {
+            // llamamos a resolve para que se muestre el mensaje
+            resolve("Promesa Resuelta");
+        }, 3000);
+    })
 }
-let respuesta =miPromesa()
-// console.log((respuesta));
-
-miPromesa().then(() => console.log("Promesa Resuelta"));
-
-
-
-// let miPromesa = new Promise(resolve, reject) {
-//    
-//     setTimeout (()=> {
-//         // resolve("Promesa Resuelta");
-//     }, 3000);
-// })
-
-// miPromesa.then(mensaje => console.log(mensaje));
+// .then ejecuta la promesa se resuelva 
+miPromesa().then(mensaje => console.log(mensaje));
