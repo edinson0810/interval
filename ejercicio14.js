@@ -4,7 +4,7 @@ function asincronica() {
         return new Promise((resolve) => {
             // funcion que permite que la promesa se resuelva con retraso de 1 segundo
         setTimeout(() => {
-             // llamamos a resolve para que se muestre el mensaje
+             // llamamos a resolve para que se muestre el mensaje,
             resolve("Promesa Completada");
         }, 1000);
         });
